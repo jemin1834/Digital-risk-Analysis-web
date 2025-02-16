@@ -4,12 +4,11 @@ import requests
 import re
 from urllib.parse import urlparse
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
 import pickle
 
-# Load dataset
-data_file = "merged_security_data.csv"
-df = pd.read_csv(data_file)
+# Load dataset from Excel
+DATA_FILE = "merged_security_data.xlsx"
+df = pd.read_excel(DATA_FILE)
 
 # Load pre-trained phishing model
 def load_model():
