@@ -6,9 +6,9 @@ from urllib.parse import urlparse
 from sklearn.ensemble import RandomForestClassifier
 import pickle
 
-# Load dataset from Excel
-DATA_FILE = "merged_security_data.xlsx"
-df = pd.read_excel(DATA_FILE)
+# Load dataset
+data_file = "merged_security_data.xlsx"
+df = pd.read_excel(data_file)
 
 # Load pre-trained phishing model
 def load_model():
